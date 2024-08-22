@@ -3,11 +3,11 @@
     border: solid black 2px;
     text-align: center;
     padding: 10px;
-    border-radius: 2px 2px;
+    border-radius: 2px 2px; /* Adiciona uma leve borda arredondada no link */
 }
 p{
-    border-radius: 2px 2px;
-    background-color: rgb(247, 226, 199);
+    border-radius: 2px 2px; /* Adiciona uma leve borda arredondada no link */
+    background-color: burlywood;
     border: solid black 2px;
     text-align: center;
     padding: 20px;
@@ -15,47 +15,64 @@ p{
 #menu{
     border-radius: 2px 2px;
     background-color: antiquewhite;
-    overflow: auto;
+    overflow: auto; /* Faz os link flutuarem, para linha horizontalmente, junto com o float:left do <li>*/
     border: solid black 2px;
+    font-size: 16pt; 
 }
 #menu li{
-    list-style-type: none; 
-    float: left;
+    list-style-type: none; /* Retirar o marcadors de lista da tag <li>*/
+    float: left; /* Faz os link flutuarem, para linha horizontalmente, junto com overflow auto*/
     width: 15%;
-    background-color: rgb(212, 212, 173);
+    background-color: burlywood;
     padding: 1%;
     margin: 1%;
     border: solid white 3px;
     text-align: center;
-    border-radius: 2px 2px;
-    box-shadow:  0 0 2px darkslategray;
+    border-radius: 2px 2px; /* Adiciona uma leve borda arredondada no link */
+    box-shadow:  0 0 2px darkslategray; /* cria uma sombra quando passao maouse sobre o link */
 }
 
 #menu li:hover{
-    box-shadow:  0 0 11px darkslategray;
+    box-shadow:  0 0 11px darkslategray; /* cria uma sombra quando passao maouse sobre o link */
     background-color: bisque;
 }
 
 div{
-    border: solid black 1px;
     text-align: center;
     padding: 10px;
 }
-form#formmsg {
-    display: table;
-  }
-  
-div#formmsg {
-    display: table-row;
+
+#formtable  {
+    width: 400px;
+    margin: 0 auto;
 }
   
-  label,
-  input {
-    display: table-cell;
-    margin-bottom: 10px;
-  }
+textarea,
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;     
+}
   
-  label {
-    padding-right: 10px;
-  }
-  
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/*Estilização do footer*/
+footer{
+    background-color: #f2f2f2;
+    padding: 30px;
+    text-align: center;
+    border: solid #ccc 1px;
+    font-size: 9pt;
+}
+div{
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border: solid #ccc 1px;
+    margin-bottom: 20px;
+}
